@@ -70,12 +70,6 @@ fewshot_Prompting = '''
     Generate the final output strictly following the same structure, language tone, and formatting shown above. Return ONLY the formatted text.
     '''
 
-# Role base prompting
-role_prompt='''
-
-'''
-
-
 # Chain of thoughts Prompting
 cot_prompt = '''
 Objective:
@@ -121,7 +115,7 @@ Document Identifiers:
 Confidence Score:
 Summary:
 
-Now do same like example with the given image:
+Now do with the given image:
 Intructions:
 Apply internal rules reasoning. Return ONLY the final formatted output.
 '''
@@ -175,7 +169,7 @@ Document Identifiers:
 Confidence Score:
 Summary:
 
-Now do same like example with the given image:
+Now do with the given image:
 Intructions:
 Apply reasoning and strict rules internally. Return ONLY the final formatted output. You can also show the other
 necessary details which you will find IMPORTANT and  relevant for the template.
@@ -231,7 +225,7 @@ Document References:
 Contextual Confidence:
 Summary:
 
-Now do same like example with the given image:
+Now do with the given image:
 Intructions:
 Generate the final output using ONLY the provided context and image. Return ONLY the formatted text above. You can also show the other
 necessary details which you will find IMPORTANT and  relevant for the template.
@@ -241,5 +235,53 @@ necessary details which you will find IMPORTANT and  relevant for the template.
 
 # self consistency Prompt
 consistency_prompt = '''
+Task Objective:
+Analyze the provided document image and produce a final, reliable,
+compliance-ready textual report.
+
+INTERNAL VALIDATION PROTOCOL (MANDATORY):
+- Independently analyze the image multiple times.
+- Compare extracted information across analyses.
+- Retain only information that remains stable and consistent.
+- If inconsistencies arise, select the most visually supported value.
+- Discard uncertain or unstable interpretations.
+
+Strict RULES:
+1. Never hallucinate or infer beyond visible evidence.
+2. If a field is unclear or inconsistent, mark it as "Not Available".
+3. Preserve original spelling and casing.
+4. Normalize all dates to ISO format (YYYY-MM-DD).
+5. Maintain formal, neutral, audit-safe language.
+6. Do not expose internal validation logic or repetitions.
+7. Output must strictly follow the format below.
+8. Provide ONE final consolidated output only.
+
+Processing steps (INTERNAL ONLY):
+- Perform repeated independent visual interpretations.
+- Cross-check extracted fields for agreement.
+- Resolve conflicts conservatively.
+- Generate a final consolidated report.
+
+FINAL OUTPUT FORMAT:
+
+Document Type:
+Issuing Authority:
+
+Verified Details:
+- Full Name:
+- Date of Birth:
+- Gender:
+
+Document References:
+- Document Number:
+- Issue Date:
+
+Reliability Score:
+Summary:
+
+Now do with the given image:
+Intructions:
+Return only the final consolidated output. Do not include explanations, reasoning, or intermediate results.
+You can also show the other necessary details which you will find IMPORTANT and  relevant for the template.
 
 '''
