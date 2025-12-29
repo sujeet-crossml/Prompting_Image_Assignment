@@ -16,7 +16,7 @@ system_instruction = '''
     '''
 
 # Few shot prompting
-fewshot_Prompting = '''
+fewshot_Prompt = '''
     Objective:
     Given a scanned document image, extract structured data, normalize fields, validate confidence, and generate a professional summary.
 
@@ -68,6 +68,7 @@ fewshot_Prompting = '''
     Now do same like example with the given image:
     Task:
     Generate the final output strictly following the same structure, language tone, and formatting shown above. Return ONLY the formatted text.
+    You can also show the other necessary details which you will find IMPORTANT and  relevant for the template.
     '''
 
 # Chain of thoughts Prompting
@@ -117,7 +118,8 @@ Summary:
 
 Now do with the given image:
 Intructions:
-Apply internal rules reasoning. Return ONLY the final formatted output.
+Apply internal rules reasoning. Return ONLY the final formatted output. You can also show the other
+necessary details which you will find IMPORTANT and  relevant for the template.
 '''
 
 
