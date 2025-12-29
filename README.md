@@ -1,5 +1,5 @@
-# Prompting Assignment
-A lightweight Python project integrating Google Gemini 3 Flash for controlled text generation, exploring parameter tuning (temperature, top_p, max_tokens) across multiple prompting techniques and use this for gettting better optimized output.
+# Prompting Image Assignment
+A lightweight Python project integrating Google Gemini 3 Flash for controlled text generation using image, exploring parameter tuning (temperature, top_p, max_tokens) across multiple prompting techniques and use this for gettting better optimized output.
 ## 📌 Project Overview
 
 The project consists of **different prompt experiments**:
@@ -18,7 +18,7 @@ The project consists of **different prompt experiments**:
 
 - **Language:** Python 3.10+
 - **LLM:** Google Gemini
-- **SDK:** `google-genai`
+- **SDK:** `google-genai`, PILLOW
 
 ---
 
@@ -26,7 +26,7 @@ The project consists of **different prompt experiments**:
 
 1. Clone the repository
     ```bash
-        git clone https://github.com/sujeet-crossml/Prompting_Assignment.git
+        git clone https://github.com/sujeet-crossml/Prompting_Image_Assignment.git
         cd Prompting_Assignment
 
 2. Create and activate a virtual environment (recommended)
