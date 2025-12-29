@@ -4,4 +4,4 @@ from prompt import *
 # Driver code
 if __name__ == "__main__":
     # calling function for starting project flow 
-    print(text_generation(cot_prompt,image))
+    print(text_generation(consistency_prompt,image))
