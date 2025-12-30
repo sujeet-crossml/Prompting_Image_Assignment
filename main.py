@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     # if prompt is consistency prompt
     if prompt_selection == consistency_prompt:
-        consistency_output = self_consistency(consistency_prompt, image)
+        consistency_output = self_consistency(prompt_selection, image)
         for lst in consistency_output:
             print(f'Output:\n{lst}\n\n')
     else:
