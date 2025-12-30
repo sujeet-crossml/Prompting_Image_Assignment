@@ -302,62 +302,6 @@ Do NOT include explanations, analysis, or metadata.
 
 # self consistency Prompt
 consistency_prompt = '''
-OUTPUT 1:
-Document Type: Pension Scheme Application Form
-Issuing Authority: Government of West Bengal
-
-Verified Details:
-- Full Name: ALPANA DAS
-- Date of Birth: 1952-01-01
-- Gender: Female
-
-Document References:
-- Document Number: 508327693768
-- Issue Date: Not Available
-
-Reliability Score: High
-Summary: This document is an application form for an Old Age Pension Scheme. 
-Key personal identification details including applicant's name, date of birth, gender, and Aadhaar number 
-have been successfully extracted from the provided visual evidence.
-
-OUTPUT 2:
-Document Type: Pension Scheme Application Form
-Issuing Authority: Government of West Bengal
-
-Verified Details:
-- Full Name: ALPANA DAS
-- Date of Birth: 1952-01-01
-- Gender: Female
-
-Document References:
-- Document Number: 508327693768
-- Issue Date: Not Available
-
-Reliability Score: High
-Summary: This document is an application form for a pension scheme. 
-Key personal identification details including the applicant's name, date of birth, gender, and 
-a primary identification number have been successfully extracted from the visual evidence.
-
-OUTPUT 3:
-Document Type: Pension Scheme Application Form
-Issuing Authority: Government of West Bengal
-
-Verified Details:
-- Full Name: ALPANA DAS
-- Date of Birth: 1952-01-01
-- Gender: Female
-
-Document References:
-- Document Number: 508327693768
-- Issue Date: Not Available
-
-Reliability Score: High
-Summary: This document is an application form for a pension scheme. 
-Key personal identification details including the applicant's name, date of birth, gender, and 
-a primary identification number have been successfully extracted from the visual evidence.
-
-
-
 Task Objective:
 Analyze the provided document image and produce a final, reliable,
 compliance-ready textual report.
